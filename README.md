@@ -1,23 +1,23 @@
 
 # Tail-GNN: Tail-Node Graph Neural Networks 
-We provide the implementaion for our paper "Tail-GNN: Tail-Node Graph Neural Networks", which is published in KDD-2021.
+We provide the code and datasets for our paper "Tail-GNN: Tail-Node Graph Neural Networks", which is published in KDD-2021.
 
 
 ## 1. Desription
 The repository is organised as follows:
 
 * dataset/: contains our benchmark datasets: email, squirrel, actor, cs-citation, amazon. All datasets will be processed on the fly. 
-  * For email, we use data split as meta-tail2vec. 
-  * For large dataset as cs-citation, it may take 5+ mins to process before training will start in first run. 
-  * For amazon, please download dataset from [this link](https://github.com/pyyush/GraphML) and put in this folder before running. It should be run on GPU with 16GB memory.
+  * For dataset Email, we use data split as meta-tail2vec. 
+  * For large dataset cs-citation, it may take 5+ mins to process before training will start in first run. 
+  * For dataset Amazon, due to its large size, please download it from [this link](https://github.com/pyyush/GraphML) and put in this folder before running. It should be run on GPU with 16GB memory.
 
 * models/: contains our model.
   * tailgnn.py: implementation of our tail_gnn model.
-  * tailgnn_sp.py: our version for large dataset.
+  * tailgnn_sp.py: sparse version for large dataset.
 
-* layers/: contains component layers for our model.  
-* utils/: contains tools for preprocessing data, metrics for evaluation, etc.
-* link_prediction/: sub-directory to run the link prediction task.
+* layers/: contains the model layers for our model.  
+* utils/: contains tool functions for preprocessing data, and metrics for evaluation, etc.
+* link_prediction/: sub-directory for codes of link prediction task.
   
 
 ## 2. Requirements
