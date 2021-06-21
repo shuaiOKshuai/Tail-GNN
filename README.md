@@ -49,8 +49,8 @@ For larger datasets:
 ## Cite
 
 	@inproceedings{liu2020towards,
-		title={Towards locality-aware meta-learning of tail node embeddings on networks},
-		author={Liu, Zemin and Zhang, Wentao and Fang, Yuan and Zhang, Xinming and Hoi, Steven CH},
-		booktitle={Proceedings of the 29th ACM International Conference on Information & Knowledge Management},
-		year={2020}
+		title={Tail-GNN: Tail-Node Graph Neural Networks},
+		author={Liu, Zemin and Nguyen, Trung-Kien and Fang, Yuan},
+		booktitle={Proceedings of the 27th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining},
+		year={2021}
 	}
