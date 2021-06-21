@@ -1,21 +1,21 @@
 
 # Tail-GNN: Tail-Node Graph Neural Networks 
-We provide the code and datasets for our paper "Tail-GNN: Tail-Node Graph Neural Networks", which is published in KDD-2021.
+We provide the code and datasets for our paper "Tail-GNN: Tail-Node Graph Neural Networks" (Tail-GNN for short), which is published in KDD-2021.
 
 
 ## 1. Desription
 The repository is organised as follows:
 
-* dataset/: contains our benchmark datasets: email, squirrel, actor, cs-citation, amazon. All datasets will be processed on the fly. 
-  * For dataset Email, we use data split as meta-tail2vec. 
-  * For large dataset cs-citation, it may take 5+ mins to process before training will start in first run. 
-  * For dataset Amazon, due to its large size, please download it from [this link](https://github.com/pyyush/GraphML) and put in this folder before running. It should be run on GPU with 16GB memory.
+* dataset/: contains the benchmark datasets: email, squirrel, actor, cs-citation and amazon. All datasets will be processed on the fly. 
+  * For dataset Email, we use the same data split in paper meta-tail2vec [this link](https://github.com/shuaiOKshuai/meta-tail2vec). 
+  * For large dataset cs-citation, when running the model it may take 5+ mins to process the dataset before training starts. 
+  * For dataset Amazon, due to its large size, please download it from [this link](https://github.com/pyyush/GraphML) and put it into this folder before running. It should be run on GPU with 16GB memory.
 
 * models/: contains our model.
-  * tailgnn.py: implementation of our tail_gnn model.
-  * tailgnn_sp.py: sparse version for large dataset.
+  * tailgnn.py: implementation of Tail-GNN model.
+  * tailgnn_sp.py: sparse version of Tail-GNN for large dataset.
 
-* layers/: contains the model layers for our model.  
+* layers/: contains the model layers of Tail-GNN.  
 * utils/: contains tool functions for preprocessing data, and metrics for evaluation, etc.
 * link_prediction/: sub-directory for codes of link prediction task.
   
@@ -42,8 +42,9 @@ For larger datasets:
 
 
 ### Note:
-- We utilize utils/data_process.py to prepare different datasets into the input format. To run model on your datasets, please refer to utils/data_process.py to process data to input format.
+- We utilize utils/data_process.py to prepare different datasets into the input format. To run the code on your datasets, please refer to utils/data_process.py to process the corresponding datasets into the input format.
 - For Email dataset, we utilize the same data split as reported in meta-tail2vec [this link](https://github.com/shuaiOKshuai/meta-tail2vec).
+- For Amazon, note that we utilize a ~1M size graph in the experiments, not the original ~2M one.
 
 
 ## Cite
