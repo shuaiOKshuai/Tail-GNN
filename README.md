@@ -7,11 +7,11 @@ We provide the code and datasets for our paper "Tail-GNN: Tail-Node Graph Neural
 The repository is organised as follows:
 
 * dataset/: contains the benchmark datasets: email, squirrel, actor, cs-citation and amazon. All datasets will be processed on the fly. 
-  * For dataset Email, we use the same data split in paper meta-tail2vec [this link](https://github.com/shuaiOKshuai/meta-tail2vec). 
-  * For large dataset cs-citation, when running the model it may take 5+ mins to process the dataset before training starts. 
-  * For dataset Amazon, due to its large size, please download it from [this link](https://github.com/pyyush/GraphML) and put it into this folder before running. It should be run on GPU with 16GB memory.
+  * For dataset Email, we use the same data split in paper [meta-tail2vec](https://github.com/shuaiOKshuai/meta-tail2vec). 
+  * For large dataset cs-citation, when running the model it may take around 5+ mins to process the dataset before training starts. 
+  * For dataset Amazon, due to its large size, we don't include it in this folder. Please download it from [this link](https://github.com/pyyush/GraphML) and put it into this folder before running. It should be run on GPU with 16GB memory. Note that we utilize a ~1M size graph in the experiments (a connected subgraph), not the original ~2M one.
 
-* models/: contains our model.
+* models/: contains our model Tail-GNN.
   * tailgnn.py: implementation of Tail-GNN model.
   * tailgnn_sp.py: sparse version of Tail-GNN for large dataset.
 
@@ -43,8 +43,6 @@ For larger datasets:
 
 ### Note:
 - We utilize utils/data_process.py to prepare different datasets into the input format. To run the code on your datasets, please refer to utils/data_process.py to process the corresponding datasets into the input format.
-- For Email dataset, we utilize the same data split as reported in meta-tail2vec [this link](https://github.com/shuaiOKshuai/meta-tail2vec).
-- For Amazon, note that we utilize a ~1M size graph in the experiments, not the original ~2M one.
 
 
 ## Cite
