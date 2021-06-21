@@ -43,7 +43,14 @@ For larger datasets:
 
 ### Note:
 - We utilize utils/data_process.py to prepare different datasets into the input format. To run model on your datasets, please refer to utils/data_process.py to process data to input format.
-- For Email dataset, we utilize the same data split as reported in meta-tail2vec.
+- For Email dataset, we utilize the same data split as reported in meta-tail2vec [this link](https://github.com/shuaiOKshuai/meta-tail2vec).
 
 
 ## Cite
+
+	@inproceedings{liu2020towards,
+		title={Towards locality-aware meta-learning of tail node embeddings on networks},
+		author={Liu, Zemin and Zhang, Wentao and Fang, Yuan and Zhang, Xinming and Hoi, Steven CH},
+		booktitle={Proceedings of the 29th ACM International Conference on Information & Knowledge Management},
+		year={2020}
+	}
