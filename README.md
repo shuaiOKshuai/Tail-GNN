@@ -45,7 +45,7 @@ For larger datasets:
 - We utilize utils/data_process.py to prepare different datasets into the input format. To run the code on your datasets, please refer to utils/data_process.py to process the corresponding datasets into the input format.
 
 
-## Cite
+## 4. Cite
 
 	@inproceedings{liu2021tailgnn,
 		title={Tail-GNN: Tail-Node Graph Neural Networks},
