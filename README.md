@@ -42,7 +42,8 @@ For larger datasets:
 
 
 ### Note:
-To run model on your dataset, please refer to utils/data_process.py to process data to proper format.
+- We utilize utils/data_process.py to prepare different datasets into the input format. To run model on your datasets, please refer to utils/data_process.py to process data to input format.
+- For Email dataset, we utilize the same data split as reported in meta-tail2vec.
 
 
 ## Cite
