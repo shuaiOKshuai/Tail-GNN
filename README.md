@@ -43,7 +43,7 @@ For larger datasets (such as cs-citation and amazon):
 
 ### Note:
 - We utilize utils/data_process.py to prepare different datasets into the input format. To run the code on **your own datasets**, please refer to utils/data_process.py to process the corresponding datasets into the input format.
-
+- Note that, we name dataset cs-citation as CoauthorCS in the paper, to correspond with the name in its original paper.
 
 ## 4. Cite
 
