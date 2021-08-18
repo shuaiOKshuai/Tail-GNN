@@ -1,6 +1,6 @@
 
 # Tail-GNN: Tail-Node Graph Neural Networks 
-We provide the code (in pytorch) and datasets for our paper "[Tail-GNN: Tail-Node Graph Neural Networks](https://zemin-liu.github.io/papers/Tail-GNN.pdf)" (Tail-GNN for short), which is published in KDD-2021.
+We provide the code (in pytorch) and datasets for our paper "[Tail-GNN: Tail-Node Graph Neural Networks](https://zemin-liu.github.io/papers/Tail-GNN-KDD-21.pdf)" (Tail-GNN for short), which is published in KDD-2021.
 
 
 ## 1. Desription
