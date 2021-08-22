@@ -44,6 +44,7 @@ For larger datasets (such as cs-citation and amazon):
 ### Note:
 - We utilize utils/data_process.py to prepare different datasets into the input format. To run the code on **your own datasets**, please refer to utils/data_process.py to process the corresponding datasets into the input format.
 - Note that, we name dataset cs-citation as CoauthorCS in the paper, to correspond with the name in its original paper.
+- In the Fig.3 of the paper, we employ both head nodes and (real) tail nodes for training. It is worthy to note that, the number of real tail nodes in training can be equal to or larger than zero. That means, given the head nodes, we can use them to generate the corresponding forged tail nodes, and apply both of them for training; and it is not necessary to utilize real tail nodes in training. Therefore, in our experimental setup, we only use all the head nodes for training, and left all the real tail nodes for test. To run the code on your own datasets, you can allocate some tail nodes into training data, or only use head nodes for training.
 
 ## 4. Cite
 
