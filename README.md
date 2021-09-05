@@ -48,10 +48,10 @@ For larger datasets (such as cs-citation and amazon):
 
 ## 4. Cite
 
-	@inproceedings{liu2021tailgnn,
-		title={Tail-GNN: Tail-Node Graph Neural Networks},
-		author={Liu, Zemin and Nguyen, Trung-Kien and Fang, Yuan},
-		booktitle={Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining},
-		year={2021},
-		pages = {1109–1119}
+	@inproceedings{liu2021tail,
+	  title={Tail-GNN: Tail-Node Graph Neural Networks},
+	  author={Liu, Zemin and Nguyen, Trung-Kien and Fang, Yuan},
+	  booktitle={Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining},
+	  pages={1109--1119},
+	  year={2021}
 	}
